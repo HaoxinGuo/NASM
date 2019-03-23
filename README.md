@@ -1,7 +1,6 @@
-﻿****
-## 目录
-* [多自由度系统的时间历史分析：NASM](# 多自由度系统的时间历史分析：NASM)
-* [简化模型](# 简化模型)
+﻿# 目录
+* [多自由度系统的时间历史分析：NASM](#多自由度系统的时间历史分析：NASM)
+* [简化模型](#简化模型)
     * 本构模型输入
     * 结构模型输入
     * 地震动输入
@@ -55,8 +54,10 @@ MATLAB版本采用MATLABR2018B教育版。
 [^4]:Subbaraj K, Dokainish M. A survey of direct time-integration methods in computationa structural dynamics—II. Implicit methods. Computers & Structures, 1989, 32(6):1387–1401.  
 [^5]:Zheng M, Yuan Z, Tong Q, et al. A novel unconditionally stable explicit integration metho for finite element method. The Visual Computer, 2018, 34(5):721–733.  
 [^6]:桂耀. 一族双显式算法及其在实时耦联动力试验中的应用[Doctor Thesis]. 2014.  
-[^7]:Kolay C. Parametrically dissipative explicit direct integration algorithms for computationa and experimental structural dynamics. 2016.  
-
+[^7]:Kolay C. Parametrically dissipative explicit direct integration algorithms for computationa and experimental structural dynamics. 2016.    
+|Author|郭豪鑫|
+|---|---
+|E-mail|Jguohaoxin@hotmail.com
 
 
 
