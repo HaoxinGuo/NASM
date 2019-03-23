@@ -1,12 +1,22 @@
-﻿@[toc]
+﻿****
+## 目录
+* [多自由度系统的时间历史分析：NASM](# 多自由度系统的时间历史分析：NASM)
+* [简化模型](# 简化模型)
+    * 本构模型输入
+    * 结构模型输入
+    * 地震动输入
+	* GUI界面输入
+* [输出](#输出)
+* [其他信息](#其他信息) 
+* [参考文献](#参考文献)
 # 多自由度系统的时间历史分析：NASM
 NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析的非商业性Matlab GUI。求解算法是Newmark常加速度法[^1]，EHHT法[^2]、KR-α[^3]、中心差分法（CDM）[^4]，FFAST[^5],Gui-λ[^6]、SEE-α[^7]法，采用Newton-Raphson迭代（Chopra第4版，表16.3.3）进行求解。
 # 简化模型
 ## 本构模型输入
 本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。  
-<img src="Figures/linear.JPG" width="500" title="图1：linear model"/>   
-<img src="Figures/bilinear.JPG" width="500" title="图2：bilinear model"/>   
-<img src="Figures/TrilinearModel" width="500" title="图3：Trilinear model"/>   
+<img src="Figures/linear.JPG" width="300" title="图1：linear model"/>   
+<img src="Figures/bilinear.JPG" width="300" title="图2：bilinear model"/>   
+<img src="Figures/TrilinearModel.jpg" width="300" title="图3：Trilinear model"/>   
 ##  结构模型输入
 NASM 使用MDOF系统的剪切集中质量模型，其质量集中在端点（我们常说的糖葫芦串模型）。  
 用户通过.csv文件输入模型信息。  
@@ -18,7 +28,7 @@ NASM 使用MDOF系统的剪切集中质量模型，其质量集中在端点（�
 NASM为用户提供两种选择：  
 1.按指定的比例因子分析每个地面运动；  
 2.缩放每个地面运动以获得导致崩溃的比例因子（在此选项中，忽略输入文件中指定的比例因子）。  
-## 界面输入
+## GUI界面输入
 NASM需要用户输入：  
 1.BuildingInformation 选取结构信息文件.csv；  
 2.Ground Motions 选择地震动信息文件.csv；  
