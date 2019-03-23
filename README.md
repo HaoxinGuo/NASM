@@ -3,15 +3,15 @@
 NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析的非商业性Matlab GUI。求解算法是Newmark常加速度法[^1]，EHHT法[^2]、KR-α[^3]、中心差分法（CDM）[^4]，FFAST[^5],Gui-λ[^6]、SEE-α[^7]法，采用Newton-Raphson迭代（Chopra第4版，表16.3.3）进行求解。
 # 简化模型
 ## 本构模型输入
-本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。
-<img src="Figures/linear.JPG" width="500" title="图1：linear model"/> 
-<img src="Figures/bilinear.JPG" width="500" title="图2：bilinear model"/> 
-<img src="Figures/HystModel.JPG" width="500" title="图3：Hysteretic model"/> 
+本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。  
+<img src="Figures/linear.JPG" width="500" title="图1：linear model"/>   
+<img src="Figures/bilinear.JPG" width="500" title="图2：bilinear model"/>   
+<img src="Figures/TrilinearModel" width="500" title="图3：Trilinear model"/>   
 ##  结构模型输入
 NASM 使用MDOF系统的剪切集中质量模型，其质量集中在端点（我们常说的糖葫芦串模型）。  
 用户通过.csv文件输入模型信息。  
 用户可以通过示例文件Model.csv进行模拟输入。   
-<img src="Figures/BldgModel.JPG" width="200" title="图4：Shear-building lumped-mass model"/>   
+<img src="Figures/BludgModel.JPG" width="200" title="图4：Shear-building lumped-mass model"/>   
 ## 地震动输入
 用户通过.csv文件输入要分析的地面运动记录及其比例因子。提供了此文件的示例以供参考。每个地面运动的名称在第一行，第二行输入计算的点数，第三行的时间步长（$\Delta t$），第四行的比例因子和加速时间序列（以[g为单位] ]）是从第五行到结尾。  
 如果第四行中指定的点数大于时间系列中的加速点数，则在记录末尾填充零以匹配指定的点数。例如，这对于正确估计残余变形特别有用。另一方面，如果第四行中指定的点数低于时间序列中的加速点数，则修改记录以匹配指定的点数。  
@@ -38,6 +38,7 @@ NASM需要用户输入：
 # 其他信息
 NASM的开发在一定程度上参考了[THAMDOF](https://github.com/pheresi/THAMDOF)，在此基础上添加了新的算法，新的功能和新的界面。
 MATLAB版本采用MATLABR2018B教育版。
+# 参考文献
 [^1]:NEWMARK N M. A method of computation for structural dynamics[J]. Journal of th engineering mechanics division, 1959, 85(3): 67–69  
 [^2]:本人基于HHT方法开发的一种新的双显示积分算法  
 [^3]:KOLAY C, RICLES J M. Development of a family of unconditionally stable explicit direc integration algorithms with controllable numerical energy dissipation[J]. Earthquak Engineering & Structural Dynamics, 2014, 43(9): 1361–1380.  
