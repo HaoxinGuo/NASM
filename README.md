@@ -47,6 +47,14 @@ NASM需要用户输入：
 # 其他信息
 NASM的开发在一定程度上参考了[THAMDOF](https://github.com/pheresi/THAMDOF)，在此基础上添加了新的算法，新的功能和新的界面。
 MATLAB版本采用MATLABR2018B教育版。
+
+# 第二次更新
+
+为NASM程序添加了启动页面，运行NASM.m文件即可进行进入界面。欢迎各位提建议和对图标以及启动界面进行设计。
+
+# 独立应用版本
+
+standalone 版本在进一步更新中，敬请期待。
 # 参考文献
 [^1]:NEWMARK N M. A method of computation for structural dynamics[J]. Journal of th engineering mechanics division, 1959, 85(3): 67–69  
 [^2]:本人基于HHT方法开发的一种新的双显示积分算法  
