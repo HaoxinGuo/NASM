@@ -1,2 +1,5 @@
 *.bat
 *.doc
+NASM
+*.eps
+*.psd

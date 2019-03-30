@@ -27,6 +27,10 @@ function NASM_OpeningFcn(hObject, eventdata, handles, varargin)
 % handles    structure with handles and user data (see GUIDATA)
 % varargin   command line arguments to NASM (see VARARGIN)
 
+mainHandle=gui2();
+pause(3);
+close(mainHandle);
+
 clc;
 global state Building GM Responses
 
