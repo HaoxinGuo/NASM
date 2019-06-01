@@ -7,9 +7,12 @@
 	* GUI界面输入
 * [输出](#输出)
 * [其他信息](#其他信息) 
+* [第二次更新](#第二次更新)
+* [独立应用版本](#独立应用版本)
+* [Python脚本](#Python脚本)
 * [参考文献](#参考文献)
 # 多自由度系统的非线性时程分析：NASM
-NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析的非商业性Matlab GUI。求解算法是Newmark常加速度法[1]，EHHT法[2]、KR-α[3]、中心差分法（CDM）[4]，FFAST[5],Gui-λ[6]、SEE-α[7]法，采用Newton-Raphson迭代（Chopra第4版，表16.3.3）进行求解。
+NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析的非商业性Matlab GUI。求解算法是Newmark常加速度法，EHHT法、KR-α、中心差分法（CDM），FFAST,Gui-λ、SEE-α法，采用Newton-Raphson迭代（Chopra第4版，表16.3.3）进行求解。
 # 简化模型
 ## 本构模型输入
 本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。  
@@ -60,21 +63,26 @@ MATLAB版本采用MATLABR2018B教育版。
 
 # 独立应用版本
 
-standalone 版本在进一步更新中，敬请期待。
+standalone 版本更新完成。
+
+# Python脚本
+
+开发中
+
 # 参考文献
-[1]:NEWMARK N M. A method of computation for structural dynamics[J]. Journal of th engineering mechanics division, 1959, 85(3): 67–69  
+Newmark常加速度法:NEWMARK N M. A method of computation for structural dynamics[J]. Journal of th engineering mechanics division, 1959, 85(3): 67–69  
 
-[2]:本人基于HHT方法开发的一种新的双显示积分算法  
+EHHT-$\alpha$:本人基于HHT方法开发的一种新的双显示积分算法  
 
-[3]:KOLAY C, RICLES J M. Development of a family of unconditionally stable explicit direc integration algorithms with controllable numerical energy dissipation[J]. Earthquak Engineering & Structural Dynamics, 2014, 43(9): 1361–1380.  
+KR-α:KOLAY C, RICLES J M. Development of a family of unconditionally stable explicit direc integration algorithms with controllable numerical energy dissipation[J]. Earthquak Engineering & Structural Dynamics, 2014, 43(9): 1361–1380.  
 
-[4]:Subbaraj K, Dokainish M. A survey of direct time-integration methods in computationa structural dynamics—II. Implicit methods. Computers & Structures, 1989, 32(6):1387–1401.  
+中心差分法（CDM）:Subbaraj K, Dokainish M. A survey of direct time-integration methods in computationa structural dynamics—II. Implicit methods. Computers & Structures, 1989, 32(6):1387–1401.  
 
-[5]:Zheng M, Yuan Z, Tong Q, et al. A novel unconditionally stable explicit integration metho for finite element method. The Visual Computer, 2018, 34(5):721–733.  
+FFAST:Zheng M, Yuan Z, Tong Q, et al. A novel unconditionally stable explicit integration metho for finite element method. The Visual Computer, 2018, 34(5):721–733.  
 
-[6]:桂耀. 一族双显式算法及其在实时耦联动力试验中的应用[Doctor Thesis]. 2014.  
+Gui-λ:桂耀. 一族双显式算法及其在实时耦联动力试验中的应用[Doctor Thesis]. 2014.  
 
-[7]:Kolay C. Parametrically dissipative explicit direct integration algorithms for computationa and experimental structural dynamics. 2016.    
+SEE-α法:Kolay C. Parametrically dissipative explicit direct integration algorithms for computationa and experimental structural dynamics. 2016.    
 
 ****
 |Author|郭豪鑫|
