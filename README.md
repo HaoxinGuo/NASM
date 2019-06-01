@@ -13,11 +13,11 @@ NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析�
 # 简化模型
 ## 本构模型输入
 本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。  
-<div align=center> <img src="Figures/linear.JPG" width="300" title="图1：linear model"/>   
+<div align=center> <img src="Figures/linear.JPG" width="300" title="图1：linear model"/></div>   
 
-<div align=center> <img src="Figures/bilinear.JPG" width="300" title="图2：bilinear model"/>   
+<div align=center> <img src="Figures/bilinear.JPG" width="300" title="图2：bilinear model"/></div>   
 
-<div align=center> ![图3](Figures/TrilinearModel.jpg)
+<div align=center> ![图3](Figures/TrilinearModel.jpg)</div>
 
 
 ## 结构模型输入
@@ -25,7 +25,7 @@ NASM 使用MDOF系统的剪切集中质量模型，其质量集中在端点（�
 用户通过.csv文件输入模型信息。  
 用户可以通过示例文件Model.csv进行模拟输入。   
 
-<div align=center> <img src="Figures/BludgModel.JPG" width="200" title="图4：Shear-building lumped-mass model"/>   
+<div align=center> <img src="Figures/BludgModel.JPG" width="200" title="图4：Shear-building lumped-mass model"/></div>
 
 ## 地震动输入
 用户通过.csv文件输入要分析的地面运动记录及其比例因子。提供了此文件的示例以供参考。每个地面运动的名称在第一行，第二行输入计算的点数，第三行的时间步长（$\Delta t$），第四行的比例因子和加速时间序列（以[g为单位] ]）是从第五行到结尾。  
