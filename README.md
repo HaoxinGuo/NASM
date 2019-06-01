@@ -13,7 +13,7 @@ NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析�
 # 简化模型
 ## 本构模型输入
 本构模型可以有三种方式可供选择：线弹性模型，双线性模型，三线性模型，可以包括P-$\Delta$效应。模型的本构关系如图1-3所示。  
-<img src="Figures/linear.JPG" width="300" div align = centering title="图1：linear model"/>   
+<div align=center><img src="Figures/linear.JPG" width="300" title="图1：linear model"/>   
 <img src="Figures/bilinear.JPG" width="300" title="图2：bilinear model"/>   
 <img src="Figures/TrilinearModel.jpg" width="300" title="图3：Trilinear model"/>   
 ##  结构模型输入
