@@ -17,7 +17,7 @@ NASM 是用于执行多自由度（MDOF）系统的非线性时间时程分析�
 
 <div align=center> <img src="Figures/bilinear.JPG" width="300" title="图2：bilinear model"/></div>   
 
-<div align=center> <img src="Figures/TrilinearModel.JPG" width="300" title="图3：Trilinear model"/></div>   
+<div align=center> <img src="Figures/TrilinearModel.jpg" width="300" title="图3：Trilinear model"/></div>   
 
 
 ## 结构模型输入
