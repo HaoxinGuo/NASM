@@ -54,8 +54,9 @@ NASM需要用户输入：
 	* 导致崩溃的比例因子
 	* 每种方法计算的时间。
 所有的计算结果均以.xlsx文件导出。
+
 # 其他信息
-NASM的开发在一定程度上参考了[THAMDOF](https://github.com/pheresi/THAMDOF)，在此基础上添加了新的算法，新的功能和新的界面。
+
 MATLAB版本采用MATLABR2018B教育版。
 
 # 第二次更新
